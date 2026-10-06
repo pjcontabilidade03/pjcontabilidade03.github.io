@@ -121,6 +121,24 @@ section{padding-block:80px}
 .contact-photo{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:16px;border:1px solid var(--line);position:relative;z-index:1}
 @media (max-width:820px){.contact{grid-template-columns:1fr !important}.contact-photo{width:min(100%,260px);justify-self:center}}
 .contact .num{white-space:nowrap;font-size:clamp(1.4rem,2.3vw,1.9rem) !important}
+.ecom{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:start}
+.ecom h2{font-size:clamp(1.8rem,3.6vw,2.5rem);margin:12px 0 16px}
+.ecom .lead{color:var(--muted);max-width:60ch;margin:0 0 28px}
+.ecom-list{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ecom-list>div{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.ecom-list h3{font-size:1.05rem;margin-bottom:6px;color:var(--text)}
+.ecom-list p{margin:0;color:var(--muted);font-size:.95rem}
+.price{background:var(--panel-2);border:1px solid var(--copper);border-radius:24px;padding:30px 28px;position:sticky;top:24px}
+.price .from{color:var(--muted);margin-top:14px;font-size:.95rem}
+.price .val{font-family:var(--f-display);font-size:3rem;font-weight:500;line-height:1.1;color:var(--text);margin:2px 0 18px}
+.price .val span{font-size:1.2rem;color:var(--copper);margin-right:6px;vertical-align:.9em}
+.price .val small{font-size:1rem;color:var(--muted);margin-left:4px}
+.price ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:10px}
+.price li{padding-left:26px;position:relative;color:var(--text)}
+.price li::before{content:"";position:absolute;left:0;top:.45em;width:12px;height:7px;border-left:2px solid var(--copper);border-bottom:2px solid var(--copper);transform:rotate(-45deg)}
+.price .btn{width:100%;justify-content:center}
+.price .note{color:var(--muted);font-size:.82rem;margin:14px 0 0;text-align:center}
+@media (max-width:820px){.ecom{grid-template-columns:1fr;gap:28px}.ecom-list{grid-template-columns:1fr}.price{position:static}}
 .about p{color:var(--muted);max-width:60ch}
 .about p strong{color:var(--text);font-weight:600}
 .facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
@@ -220,6 +238,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
+<section id="ecommerce">
+  <div class="wrap ecom">
+    <div>
+      <div class="eyebrow">Contabilidade para e-commerce</div>
+      <h2>Vende pela internet? A contabilidade da sua loja fica com a gente</h2>
+      <p class="lead">Para quem vende em loja virtual, Mercado Livre, Shopee, Amazon ou Instagram. Organizamos impostos, notas e números da sua operação para você vender mais sem dor de cabeça.</p>
+      <div class="ecom-list">
+        <div><h3>Regime tributário certo</h3><p>Definimos o enquadramento ideal da sua loja e revisamos conforme o faturamento cresce.</p></div>
+        <div><h3>Produtos bem classificados</h3><p>Classificação fiscal correta de cada produto, aproveitando benefícios como a tributação monofásica.</p></div>
+        <div><h3>Vendas dos marketplaces conferidas</h3><p>Cruzamos as vendas do Mercado Livre, Shopee e Amazon com os recebimentos e as notas emitidas.</p></div>
+        <div><h3>Notas fiscais sem erro</h3><p>Orientamos a emissão e a integração com o seu sistema de vendas, dentro das regras do seu estado.</p></div>
+      </div>
+    </div>
+    <aside class="price">
+      <div class="eyebrow">Plano e-commerce</div>
+      <div class="from">a partir de</div>
+      <div class="val"><span>R$</span>229,90<small>/mês</small></div>
+      <ul><li>Atendimento 100% online</li><li>Contador dedicado no WhatsApp</li><li>Impostos e obrigações em dia</li><li>Relatórios simples do seu negócio</li></ul>
+      <a class="btn btn-copper" href="https://wa.me/5583998087843?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20a%20contabilidade%20para%20e-commerce." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3a.4.4 0 000-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.1-1.3c0-.1-.2-.2-.4-.3z"/></svg> Quero esse plano</a>
+      <p class="note">Valor final conforme faturamento e volume de notas.</p>
+    </aside>
+  </div>
+</section>
+
 
 <section class="band" id="como-funciona">
   <div class="wrap">
